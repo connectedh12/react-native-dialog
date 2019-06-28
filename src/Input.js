@@ -31,6 +31,8 @@ export default class DialogInput extends React.PureComponent {
       <View style={[styles.textInputWrapper, wrapperStyle]}>
         {label && <Text style={styles.label}>{label}</Text>}
         <TextInput
+          autoFocus={true}
+          keyboardType={'numeric'}
           ref={textInputRef}
           style={[styles.textInput, style, { height }]}
           multiline={multiline}
